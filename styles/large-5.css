@@ -9,7 +9,7 @@ body {
 
 h1 {
     font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size:40px/* font */;
+    font-size:30px/* font */;
     color: white/* #xxxxxx */;
     
 }
@@ -33,7 +33,7 @@ header, footer {
     max-width: 355p;
 }
 
-footer, footer a {
+header, footer, footer a {
     text-align: justify;
     background-color: cornflowerblue/* */;
     color: white;
@@ -41,7 +41,7 @@ footer, footer a {
 }
 
 header img {
-    width: 126px;
+    width: 114px;
     height: 23p;
     float: right;
 }
