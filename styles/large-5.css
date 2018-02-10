@@ -1,0 +1,89 @@
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 12px; 
+    line-height: 45px;
+    font-family: "Comic Sans MS", cursive, sans-serif/* font */;
+    color: blueviolet/* #xxxxxx */;
+}
+
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size:40px/* font */;
+    color: white/* #xxxxxx */;
+    
+}
+
+h2 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 28px;
+    text-align: center;   
+}
+
+
+
+
+
+
+
+header, footer {
+    font-family: "Courier New", Courier, monospace;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 355p;
+}
+
+footer, footer a {
+    text-align: justify;
+    background-color: cornflowerblue/* */;
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+header img {
+    width: 126px;
+    height: 23p;
+    float: right;
+}
+
+picture img {
+    width: 210x;
+    height: 300px;
+    float: right;
+}
+
+
+
+/*This is the main menu style */
+nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    font-size:16px
+}
+nav li{
+    display:inline;
+}
+nav a{
+    display:inline-block;
+    padding:45px;
+    border-bottom: 10px solid #bbb;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+footer {
+    font-size: 12 /* 12 */;
+}
+
+width="200" height="273"
