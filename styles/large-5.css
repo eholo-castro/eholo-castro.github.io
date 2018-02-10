@@ -35,7 +35,7 @@ header, footer {
 
 header, footer, footer a {
     text-align: justify;
-    background-color: cornflowerblue/* */;
+    background-color: cornflowerblue;
     color: white;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
