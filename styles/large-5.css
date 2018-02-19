@@ -1,3 +1,7 @@
+@media only screen and (min-width: 64em) {
+    
+}
+
 * { margin: 0; box-sizing: border-box; } 
 
 body { 
@@ -108,7 +112,7 @@ figure {
 }
 
 figure img {
-    width: 1000px;
+    width: 900px;
     height: 23p;
     float: center;    
 }
@@ -201,10 +205,11 @@ outline-color: black;
 
 
 article {
-    text-align: center;
+    text-align: left;
     background-color: white;
-    color: purple;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
     display:inline-block;
     padding:45px;
     border-bottom: 10px solid whitesmoke;
@@ -243,5 +248,6 @@ footer, footer a {
 footer {
     font-size: 12 /* 12 */;
 }
+
 
 width="200" height="273"
