@@ -86,8 +86,8 @@ nav ul li a:hover {
 
 main {}
 main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }
+main figure { margin: 0 0 .2rem 2%; width:97%; }
+main figure img { width: 80%; }
 
 section {}
 
