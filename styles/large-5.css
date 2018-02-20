@@ -112,12 +112,11 @@ figure {
 }
 
 figure img {
-    width: 700px;
-    height: 23p;
-    float: center;    
+     margin: 0 0 .2rem 2%; width:97%;
+         
 }
 
-
+main figure img { width: 80%; }
 
 
 
@@ -218,7 +217,7 @@ article {
 article img {
     width: 170px;
     height: 23p;
-    float: left;
+    float: right;
 
 }
 

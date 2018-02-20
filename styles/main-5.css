@@ -1,5 +1,8 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 * {margin:0}
 
@@ -10,9 +13,11 @@ body {
 
 .hamburger {
     display: block;
-    position:absolute;
+    position:sticky;
     top: 2.0rem;
     right:1.25rem;
+    height: 23p;
+     
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
@@ -20,22 +25,12 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
     max-width:inherit;
 }
 
-header {}
-
-
-header h1 {}
-header img {}
-header .subheading {}
-
-nav {
-    overflow:hidden;
-    margin: 0 0 .2rem 4%; width:100%;
-}
-
 
 
 /*This is the main menu style */
 nav{
+    overflow:hidden;
+    margin: 0 0 .2rem 5%; width:100%;
     list-style:none;
     margin:0;
     padding:0;
@@ -62,13 +57,18 @@ ul {
 }
 
     
-nav ul li.active a {}
 nav ul li a:hover {
     color: mediumpurple
 }
 
 
-
+nav button {
+    margin: 0.2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    
+}
 
 
 
@@ -106,20 +106,10 @@ placed in a media query in order to accomodate the toggle when in wider view*/
 
 
 
-main {}
-main h2 {}
+
 main figure { margin: 0 0 .2rem 2%; width:97%; }
 main figure img { width: 80%; }
 
-section {}
 
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 170px; /* fill the page in the small/phone view */
-  margin: 23p;
-}
-
-footer {}
-footer aside {}
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
