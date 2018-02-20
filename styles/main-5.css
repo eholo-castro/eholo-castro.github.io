@@ -1,10 +1,18 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* {margin:0}
 
 body {
   font-size: 16px;
   /* Declare the base font-family - from google font api or other */
+}
+
+.hamburger {
+    display: block;
+    position:absolute;
+    top: 2.0rem;
+    right:1.25rem;
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
@@ -21,65 +29,79 @@ header .subheading {}
 
 nav {
     overflow:hidden;
-}
-
-
-nav a {
-    float: left;
-    display:block;
-    text-align: center;
-    padding:14px 16px;
-    
-}
-
-
-nav button {}
-nav ul {}
-nav ul li {}
-
-
-
-nav ul li a {
-    
-    
+    margin: 0 0 .2rem 4%; width:100%;
 }
 
 
 
+/*This is the main menu style */
+nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    font-size:16px;
+}
 
+nav li{
+    display:inline;
+    background-color: whitesmoke;
+    color: green
+}
 
+nav a{
+    display:inline-block;
+    padding:45px;
+    border-bottom: 10px solid whitesmoke;
+}
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}
 
-
+    
 nav ul li.active a {}
 nav ul li a:hover {
-    color: aqua;
+    color: mediumpurple
 }
 
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  nav a:not(:first-child) {display: none;}
-  nav a.icon {
-  float: right;
-  display: block;
-  }
+
+
+
+
+
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+@media only screen and (max-width: 37.5em) {
+     }
+    
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  nav.responsive {position: relative;}
-  nav.responsive a.icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-  }
-  nav.responsive a {
-  float: none;
-  display: block;
-  text-align: left;
-  }
+
+
+/* The following can be used in lieu of a button with a HTML entity which may not be dispalyed correctly in all browsers - or a SVG option is good - button size issue
+.hamburger { 
+    content: "";
+    position: absolute;
+    right: 1.5rem; top: 1.8rem;
+    display: block;
+    width: 1.25rem; height: 0;
+    -webkit-box-shadow: 1px 10px 1px 1px #eee,1px 16px 1px 1px #eee,1px 22px 1px 1px #eee;
+    box-shadow: 0 10px 0 1px #eee,0 16px 0 1px #eee,0 22px 0 1px #eee;
+}*/
+@media only screen and (min-width: 37.5em) {
+    header, nav {   margin: 0 auto; max-width: 600px;   }
+    .navigation a:hover {   color:purple;    }
 }
+
+
+
+
+
+
 
 
 
