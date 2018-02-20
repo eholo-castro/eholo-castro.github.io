@@ -67,6 +67,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
+    display: none;
     
 }
 
@@ -75,7 +76,11 @@ nav button {
 
 /* When the responsive class is added to the unordered list on hamburger button click 
 placed in a media query in order to accomodate the toggle when in wider view*/
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 600em) {
+    nav a:not(:first-child) {display: none;}
+    nav button {
+    float: right;
+    display: block;
      }
     
 }
@@ -92,9 +97,9 @@ placed in a media query in order to accomodate the toggle when in wider view*/
     -webkit-box-shadow: 1px 10px 1px 1px #eee,1px 16px 1px 1px #eee,1px 22px 1px 1px #eee;
     box-shadow: 0 10px 0 1px #eee,0 16px 0 1px #eee,0 22px 0 1px #eee;
 }*/
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 600em) {
     header, nav {   margin: 0 auto; max-width: 600px;   }
-    .navigation a:hover {   color:purple;    }
+    
 }
 
 
