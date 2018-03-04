@@ -36,23 +36,29 @@
     
   <!-- Main Menu -->
   <nav>
-    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
-        <script>
-            function toggleNavMenu() {
-                document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-                }       
-        </script>
-    <ul class="navigation">
+    <div class="topnav" id="myTopnav">
     	<li><a href="/eholo-castro.github.io/index.html">Home</a></li>
     	<li class="franklin"><a href="/eholo-castro.github.io/franklin-7.html">Franklin</a></li>
     	<li class="Greenville"><a href="">Greenville</a></li>
     	<li class="Springfield"><a href="">Springfield</a></li>
     	<li class="Storm Center"><a href="/eholo-castro.github.io/stormcenter.html">Storm Center</a></li>
     	<li class="pictures"><a href="/eholo-castro.github.io/gallery-7.html">Gallery</a></li>
-        
-    </ul>		
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>		
   </nav>
   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   <main class="stor">
     
     <h2>Storm Center</h2>
@@ -94,7 +100,7 @@
 		<input id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" type="range">
 		<span id="ratingvalue">5</span><br>
 		
-<label for="region">Storm Region: </label>
+    <label for="region">Storm Region: </label>
 		<select id="sr">
 			<option value="Select Region ..." selected="" disabled="">Select Region</option>
  	  	<option value="Franklin">Franklin</option>
@@ -107,6 +113,7 @@
 			<legend>User in-danger (Select One)</legend>
 			<label for="q1">Are you in danger?</label><br>
 			<input name="q1" value="Yes" type="radio"> Yes<br>
+            <input name="q1" value="Yes" type="radio"> Maybe<br>
 			<input name="q1" value="No" checked="" type="radio"> No <br>
 		</fieldset>
 
@@ -120,6 +127,13 @@
 </div>
     </main>
 
+    
+    
+    
+    
+    
+    
+    
   <footer>
     <aside>
       Contact Us:
@@ -129,10 +143,12 @@
     document.getElementById("currentdate").innerHTML = Date();
     </script>
   </footer>
+    
+    
+    <script src="scripts/hamburger.js"></script>
+    
 
-  
-  
-  
+
 
 </body>
 </html>
