@@ -38,14 +38,21 @@
     
   <!-- Main Menu -->
   <nav>
-    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <button class="hamburger" href="javascript:void(0);" onclick="myFunction()">&#9776;</button>
         <script>
-            function toggleNavMenu() {
-                document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-                }       
+            function myFunction() {
+                            "use strict";
+                            var x = document.getElementById("myTopnavigation");
+                            if (x.className === "navigation") {
+                                x.className += " responsive";
+                            } else {
+                            x.className = "navigation";
+                            }
+                        }      
         </script>
-    <ul class="navigation">
-    	<li><a href="/eholo-castro.github.io/index.html">Home</a></li>
+      
+    <ul class="navigation" id="myTopnavigation">
+    	<li class="Home"><a href="/eholo-castro.github.io/index.html">Home</a></li>
     	<li class="franklin"><a href="/eholo-castro.github.io/franklin-7.html">Franklin</a></li>
     	<li class="Greenville"><a href="">Greenville</a></li>
     	<li class="Springfield"><a href="">Springfield</a></li>
@@ -53,6 +60,8 @@
     	<li class="pictures"><a href="/eholo-castro.github.io/gallery-7.html">Gallery</a></li>
         
     </ul>		
+      
+      
   </nav>
     
     
@@ -66,7 +75,7 @@
     
   <main>
     <h2>The City of Franklin</h2>
-    <figure>
+    <figure class="mypic">
       <img src="images/Franklin%20Original.jpg" alt="Franklin Original" >
     </figure>
     
@@ -84,7 +93,8 @@
       </div>   
       <div class="conditions">
         <p>Precipitation: 0%</p>  
-        <p>Wind Speed: 5 mph SW</p>  
+        <p>Wind Speed: 5 mph SW</p>
+        <p>Wind Chill: <span id="windchill">&deg;F</span></p>
       </div>           
     </section>
 
@@ -156,7 +166,10 @@
     document.getElementById("currentdate").innerHTML = Date();
     </script>
   </footer>
-
+  
+    
+  
+  <script src="scripts/windchill.js"></script>
   
   
   
